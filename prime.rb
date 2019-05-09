@@ -2,8 +2,9 @@
 def prime?(num)
 (2..(num -1)).each do |n|
   return false if num % n == 0
-elsif return false if num <0
-end
+  if num <0
+    return false
+  end
 end
 true
 end
